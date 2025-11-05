@@ -1,7 +1,7 @@
 // Quest categories and their data folder paths
 const QUEST_CATEGORIES = {
   'free-bounty': 'data/free-bounty/',
-  'event': 'data/event/',
+  'event-bounty': 'data/event-bounty/',
   'bronze-prog': 'data/bronze-prog/',
   'silver-prog': 'data/silver-prog/',
   'gold-prog': 'data/gold-prog/'
@@ -14,8 +14,8 @@ const QUEST_FILES = {
     '01.json',
     '18.json'
   ],
-  'event': [
-    // Add event quest filenames here
+  'event-bounty': [
+    '01.json'
   ],
   'bronze-prog': [
     // Add bronze prog quest filenames here

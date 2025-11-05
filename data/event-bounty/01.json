@@ -1,0 +1,138 @@
+{
+  "quest_id": "EVENT-01",
+  "quest_name": "Musou Eruzerion (Calamity of Ice and Fire)",
+  "quest_subtitle": "5min Variant",
+  "image_url": "images/event-bounty/01.png",
+  "difficulty": {
+    "stars": 0,
+    "half_stars": 0
+  },
+  "rewards": {
+    "solo": [
+      {
+        "item": "きんぴか小判Ｇ",
+        "quantity": 100
+      },
+      {
+        "item": "Divine Power Gem",
+        "quantity": 18000
+      },
+      {
+        "item": "Elixir of Peace",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Heart (HP)",
+        "quantity": 10
+      },
+      {
+        "item": "Maiden's Heart (Evd)",
+        "quantity": 10
+      },
+      {
+        "item": "Maiden's Heart (Stm)",
+        "quantity": 10
+      },
+      {
+        "item": "Maiden's Wish (HP)",
+        "quantity": 10
+      },
+      {
+        "item": "Maiden's Wish (Evd)",
+        "quantity": 10
+      },
+      {
+        "item": "Maiden's Wish (Stm)",
+        "quantity": 10
+      }
+    ],
+    "multiplayer": [
+      {
+        "item": "きんぴか小判Ｇ",
+        "quantity": 40
+      },
+      {
+        "item": "Divine Power Gem",
+        "quantity": 15000
+      },
+      {
+        "item": "Elixir of Peace",
+        "quantity": 20
+      },
+      {
+        "item": "Maiden's Heart (HP)",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Heart (Evd)",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Heart (Stm)",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Wish (HP)",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Wish (Evd)",
+        "quantity": 15
+      },
+      {
+        "item": "Maiden's Wish (Stm)",
+        "quantity": 15
+      }
+    ],
+    "speedrun": []
+  },
+  "bounty_coin": {
+    "solo": 30000,
+    "multiplayer": 25000,
+    "speedrun": 0
+  },
+  "gacha_ticket": {
+    "solo": 30,
+    "multiplayer": 60,
+    "speedrun": 0
+  },
+  "requirements": {
+    "mode": "Solo & Co-op (Duo Only)",
+    "mode_notes": [
+      "Solo play available",
+      "Co-op limited to Duo (2 players) only",
+      "3rd player or full party is not allowed"
+    ],
+    "restrictions": [
+      "Must have 'Rain Demolizer' title",
+      "Adrenaline Only",
+      "No Halk Pot/Login Boost"
+    ],
+    "multiplayer_restrictions": [
+      "Duo only - 3rd player or full party not allowed"
+    ],
+    "weapon_time_requirements": [
+      {
+        "weapons": ["All weapons"],
+        "time_limit_minutes": 5,
+        "submission_note": "5 minute time limit for quest completion"
+      }
+    ]
+  },
+  "how_to_claim": {
+    "screenshot_requirements": [
+      "Quest completion screen",
+      "Equipment set when quest is completed"
+    ],
+    "multiplayer_requirements": [
+      "Both players must submit screenshots",
+      "Must show duo party composition"
+    ],
+    "speedrun_submission_note": "Not applicable for this quest",
+    "proof_required": [
+      "Screenshot of quest completion",
+      "Screenshot of equipment set",
+      "Rain Demolizer title must be visible"
+    ]
+  }
+}
