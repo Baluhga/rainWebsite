@@ -4,7 +4,7 @@
   "quest_subtitle": "5min Variant",
   "image_url": "images/event-bounty/01.png",
   "difficulty": {
-    "stars": 0,
+    "stars": 10,
     "half_stars": 0
   },
   "rewards": {
