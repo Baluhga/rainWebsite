@@ -1,0 +1,102 @@
+{
+  "quest_id": "FREE-01",
+  "quest_name": "Howling Zinogre",
+  "quest_subtitle": "Destructive Storm Howl / A Destructive Performance",
+  "image_url": "images/free-bounty/01.png",
+  "difficulty": {
+    "stars": 6,
+    "half_stars": 1
+  },
+  "rewards": {
+    "solo": [
+      {
+        "item": "Divine Power Gems",
+        "quantity": 18000
+      },
+      {
+        "item": "Shiten Tkt",
+        "quantity": 40
+      },
+      {
+        "item": "Serious Drink[Affinity]",
+        "quantity": 10
+      }
+    ],
+    "multiplayer": [],
+    "speedrun": [
+      {
+        "item": "Divine Power Gem",
+        "quantity": 25000
+      },
+      {
+        "item": "Upper Shiten Key",
+        "quantity": 50
+      },
+      {
+        "item": "Shiten Tkt",
+        "quantity": 60
+      },
+      {
+        "item": "Serious Drink[Affinity]",
+        "quantity": 25
+      }
+    ]
+  },
+  "bounty_coin": {
+    "solo": 15000,
+    "multiplayer": null,
+    "speedrun": 23000
+  },
+  "gacha_ticket": {
+    "solo": 10,
+    "multiplayer": null,
+    "speedrun": 25
+  },
+  "requirements": {
+    "mode": "Solo only",
+    "mode_notes": [],
+    "restrictions": [
+      "No Halk Pot/Login Boost"
+    ],
+    "multiplayer_restrictions": [],
+    "weapon_time_requirements": [
+      {
+        "weapons": [
+          "Magnet Spike",
+          "Dual Blades",
+          "Tonfa"
+        ],
+        "time_limit_minutes": 5,
+        "submission_note": "Submit as Multi to claim speedrun reward"
+      },
+      {
+        "weapons": [
+          "Switch Axe"
+        ],
+        "time_limit_minutes": 6,
+        "submission_note": "Submit as Multi to claim speedrun reward"
+      },
+      {
+        "weapons": [
+          "Other Weapon"
+        ],
+        "time_limit_minutes": 7,
+        "submission_note": "Submit as Multi to claim speedrun reward"
+      }
+    ]
+  },
+  "how_to_claim": {
+    "screenshot_requirements": [
+      "Entire game screen showing player names",
+      "Player models",
+      "Monster corpse",
+      "In-game chat log",
+      "Equipment Status information"
+    ],
+    "multiplayer_requirements": [],
+    "speedrun_submission_note": "Speedrun category needs to be submitted as Multiplayer for better rewards",
+    "proof_required": [
+      "Timer shown in screenshot for Speedrun reward"
+    ]
+  }
+}

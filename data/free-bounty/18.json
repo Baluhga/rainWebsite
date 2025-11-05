@@ -1,0 +1,77 @@
+{
+  "quest_id": "FREE-18",
+  "quest_name": "Musou Zerureusu",
+  "quest_subtitle": "Circling Red Radiance",
+  "image_url": "images/free-bounty/18.png",
+  "difficulty": {
+    "stars": 9,
+    "half_stars": 0
+  },
+  "rewards": {
+    "solo": [
+      {
+        "item": "Divine Power Gems",
+        "quantity": 20000
+      },
+      {
+        "item": "Shiten Tkt",
+        "quantity": 50
+      }
+    ],
+    "multiplayer": [
+      {
+        "item": "Divine Power Gems",
+        "quantity": 13000
+      },
+      {
+        "item": "Shiten Tkt",
+        "quantity": 35
+      },
+      {
+        "item": "Upper Shiten Lock",
+        "quantity": 40
+      }
+    ],
+    "speedrun": []
+  },
+  "bounty_coin": {
+    "solo": 15000,
+    "multiplayer": 8000,
+    "speedrun": null
+  },
+  "gacha_ticket": {
+    "solo": 25,
+    "multiplayer": 20,
+    "speedrun": null
+  },
+  "requirements": {
+    "mode": "Solo or Multiplayer",
+    "mode_notes": [
+      "Bringing Rasta or Partner counts as Multiplayer"
+    ],
+    "restrictions": [
+      "No Halk Pot/Login Boost",
+      "No Helpers"
+    ],
+    "multiplayer_restrictions": [
+      "Only 1 Magnet Spike (Except Rasta)"
+    ],
+    "weapon_time_requirements": []
+  },
+  "how_to_claim": {
+    "screenshot_requirements": [
+      "Entire game screen showing player names",
+      "Player models",
+      "Monster corpse",
+      "In-game chat log",
+      "Equipment Status information"
+    ],
+    "multiplayer_requirements": [
+      "All participating players must send their own screenshots",
+      "Each screenshot must follow the same requirements showing necessary information",
+      "Any participating player's failure to comply will result in a rejected submission"
+    ],
+    "speedrun_submission_note": "",
+    "proof_required": []
+  }
+}

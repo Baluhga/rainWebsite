@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest Bounties</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quest Bounties</h1>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('free-bounty')">Free Bounty</button>
+      <button class="tab" onclick="switchTab('event')">Event</button>
+      <button class="tab" onclick="switchTab('bronze-prog')">Bronze Prog</button>
+      <button class="tab" onclick="switchTab('silver-prog')">Silver Prog</button>
+      <button class="tab" onclick="switchTab('gold-prog')">Gold Prog</button>
+    </div>
+
+    <!-- Quest Container -->
+    <div id="quest-container" class="quest-list">
+      <!-- Quests will be loaded here -->
+    </div>
+
+    <div id="loading" class="loading">Loading quests...</div>
+    <div id="no-quests" class="no-quests" style="display: none;">No quests available in this category</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
