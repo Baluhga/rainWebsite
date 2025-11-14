@@ -1,27 +1,27 @@
+#!/usr/bin/env python3
 import http.server
 import socketserver
 import os
+import time
 
 PORT = 8000
 
-class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    def end_headers(self):
-        # Add CORS headers
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET')
-        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
-        return super().end_headers()
+class DebugHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        start_time = time.time()
+        print(f"\n[{time.strftime('%H:%M:%S')}] Request: {self.path}")
+        
+        result = super().do_GET()
+        
+        elapsed = time.time() - start_time
+        print(f"[{time.strftime('%H:%M:%S')}] Completed in {elapsed:.3f}s")
+        
+        return result
 
-# Change to the directory where this script is located
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+print(f"Serving from: {os.getcwd()}")
+print(f"Server running at http://localhost:{PORT}")
+print("Press Ctrl+C to stop\n")
 
-Handler = MyHTTPRequestHandler
-
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("Press Ctrl+C to stop the server\n")
-    print(f"http://localhost:{PORT}")
-
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        print("\n\nServer stopped")
+with socketserver.TCPServer(("", PORT), DebugHandler) as httpd:
+    httpd.serve_forever()

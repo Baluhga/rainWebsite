@@ -3,31 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quest Bounties</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Quest Bounties - Home</title>
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <style>
+    .home-container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .home-container h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 20px 30px;
+      background: var(--color-card);
+      color: var(--color-primary);
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      border-color: var(--color-primary);
+      background: #1f2937;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .home-container h1 {
+        font-size: 36px;
+      }
+
+      .nav-link {
+        font-size: 18px;
+        padding: 16px 24px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Quest Bounties</h1>
-    
-    <!-- Tabs -->
-    <div class="tabs">
-      <button class="tab active" onclick="switchTab('free-bounty')">Free Bounty</button>
-      <button class="tab" onclick="switchTab('event-bounty')">Event Bounty</button>
-      <button class="tab" onclick="switchTab('bronze-prog')">Bronze Prog</button>
-      <button class="tab" onclick="switchTab('silver-prog')">Silver Prog</button>
-      <button class="tab" onclick="switchTab('gold-prog')">Gold Prog</button>
+    <div class="home-container">
+      <h1>⚔️ Quest Bounties ⚔️</h1>
+      
+      <div class="nav-links">
+        <a href="/pages/quests/quests.html" class="nav-link">Quest Board</a>
+        <!-- Add more links here as needed -->
+      </div>
     </div>
-
-    <!-- Quest Container -->
-    <div id="quest-container" class="quest-list">
-      <!-- Quests will be loaded here -->
-    </div>
-
-    <div id="loading" class="loading">Loading quests...</div>
-    <div id="no-quests" class="no-quests" style="display: none;">No quests available in this category</div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
