@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weapon Guides</title>
+  <link rel="stylesheet" href="../../assets/css/shared.css">
+  <style>
+    .guides-container {
+      padding: 60px 20px;
+    }
+
+    .guides-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .guides-header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .guides-section {
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+
+    .guides-section h2 {
+      color: var(--color-primary);
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .guides-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .guide-link {
+      display: block;
+      padding: 20px 30px;
+      background: var(--color-card);
+      color: var(--color-primary);
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .guide-link:hover {
+      border-color: var(--color-primary);
+      background: #1f2937;
+      transform: translateY(-2px);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .guides-header h1 {
+        font-size: 36px;
+      }
+
+      .guides-section h2 {
+        font-size: 24px;
+      }
+
+      .guide-link {
+        font-size: 18px;
+        padding: 16px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="guides-container">
+      <a href="../../index.html" class="back-link">← Back to Home</a>
+      
+      <div class="guides-header">
+        <h1>Guides</h1>
+      </div>
+      
+      <div class="guides-section">
+        <h2>Weapon Guides</h2>
+        <div class="guides-list">
+          <a href="SAFGuide/SAFGuide.html" class="guide-link">Switch Axe F</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
