@@ -7,17 +7,16 @@
 
 /* CSS Variables for consistency */
 :root {
-  --color-primary: #58a6ff;
-  --color-bg: #0f1419;
-  --color-card: #161b22;
-  --color-border: #30363d;
-  --color-text: #e6edf3;
-  --color-text-muted: #8b949e;
-  --color-success: #3fb950;
-  --color-warning: #f0b429;
-  --color-danger: #f85149;
+  --color-primary: #4f3307;        /* Warm tan/gold for primary elements */
+  --color-bg: #9a8767;             /* Lighter brown background */
+  --color-card: #c8c0a3;           /* Lighter medium brown for cards */
+  --color-border: #5a4d3a;         /* Brownish border */
+  --color-text: #3b3831;           /* Light tan/cream text */
+  --color-text-muted: #483608;     /* Muted tan for secondary text */
+  --color-success: #7fb069;        /* Muted green (for stats/success) */
+  --color-warning: #660c5b;        /* Gold/tan for warnings */
+  --color-danger: #c85a54;         /* Muted red for danger */
 }
-
 /* Body */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -58,5 +57,95 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #484f58;
+  background: #594806;
+}
+
+#paper-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 9999;
+  background-image: url('../Textures/paper.jpg');
+  background-repeat: repeat;
+  opacity: 0.3; 
+  mix-blend-mode: multiply; 
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  background-color: var(--color-card);
+  color: var(--color-text);
+  text-decoration: none;
+  border: 3px solid var(--color-border);
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-card) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
+}
+
+.nav-link:visited {
+  color: var(--color-text);
+}
+
+/* Weapon Guides Section */
+.guides-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.guide-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--color-card);
+  color: var(--color-text);
+  text-decoration: none;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.guide-link:hover {
+  background-color: var(--color-primary) !important;
+  color: var(--color-card) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
+}
+
+.guide-link:visited {
+  color: var(--color-text);
+}
+
+.guide-link:active {
+  transform: translateY(0);
 }

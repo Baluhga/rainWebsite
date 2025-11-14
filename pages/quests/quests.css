@@ -3,7 +3,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #30363d;
+  border-bottom: 2px solid var(--color-border);
   overflow-x: auto;
   flex-wrap: wrap;
 }
@@ -16,19 +16,19 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  color: #8b949e;
+  color: var(--color-text-muted);
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .tab:hover {
-  color: #58a6ff;
-  background-color: #161b22;
+  color: var(--color-primary);
+  background-color: rgba(79, 51, 7, 0.1);
 }
 
 .tab.active {
-  color: #58a6ff;
-  border-bottom-color: #58a6ff;
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
 /* Quest List */
@@ -40,16 +40,16 @@
 
 /* Quest Card - Collapsed State */
 .quest-card {
-  background: #161b22;
+  background: var(--color-card);
   border-radius: 12px;
-  border: 1px solid #30363d;
+  border: 1px solid var(--color-border);
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .quest-card:hover {
-  border-color: #58a6ff;
+  border-color: var(--color-primary);
 }
 
 .quest-card.expanded {
@@ -62,12 +62,12 @@
   gap: 20px;
   padding: 20px;
   align-items: center;
-  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  background: linear-gradient(135deg, #8a7a5f 0%, #6b5d49 100%);
   position: relative;
 }
 
 .quest-card:not(.expanded) .quest-header:hover {
-  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  background: linear-gradient(135deg, #9a8767 0%, #7a6a52 100%);
 }
 
 .quest-image {
@@ -75,7 +75,7 @@
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
-  border: 3px solid rgba(88, 166, 255, 0.3);
+  border: 3px solid rgba(79, 51, 7, 0.5);
   flex-shrink: 0;
 }
 
@@ -86,27 +86,27 @@
 
 .quest-id {
   display: inline-block;
-  background-color: rgba(88, 166, 255, 0.2);
-  color: #58a6ff;
+  background-color: rgba(79, 51, 7, 0.3);
+  color: var(--color-primary);
   padding: 6px 14px;
   border-radius: 12px;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
-  border: 1px solid rgba(88, 166, 255, 0.3);
+  border: 1px solid rgba(79, 51, 7, 0.5);
 }
 
 .quest-info h2 {
   margin: 0 0 8px 0;
   font-size: 28px;
-  color: #e6edf3;
+  color: var(--color-text);
 }
 
 .quest-subtitle {
   margin: 0 0 12px 0;
   font-size: 16px;
-  color: #8b949e;
+  color: var(--color-text-muted);
 }
 
 .quest-difficulty {
@@ -119,7 +119,7 @@
   top: 20px;
   right: 20px;
   font-size: 24px;
-  color: #58a6ff;
+  color: var(--color-primary);
   transition: transform 0.3s ease;
 }
 
@@ -132,7 +132,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background: #0d1117;
+  background: var(--color-bg);
 }
 
 .quest-card.expanded .quest-body {
@@ -144,16 +144,16 @@
 }
 
 .quest-body-content h3 {
-  color: #58a6ff;
+  color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 15px;
-  border-bottom: 2px solid #30363d;
+  border-bottom: 2px solid var(--color-border);
   padding-bottom: 8px;
   font-size: 20px;
 }
 
 .quest-body-content h4 {
-  color: #8b949e;
+  color: var(--color-text-muted);
   margin: 10px 0 8px 0;
   font-size: 16px;
 }
@@ -166,14 +166,14 @@
 .reward-section {
   margin-bottom: 15px;
   padding: 15px;
-  background-color: #161b22;
+  background-color: var(--color-card);
   border-radius: 8px;
-  border-left: 4px solid #58a6ff;
+  border-left: 4px solid var(--color-primary);
 }
 
 .reward-section h4 {
   margin: 0 0 10px 0;
-  color: #58a6ff;
+  color: var(--color-primary);
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -187,13 +187,13 @@
 
 .reward-section ul li {
   padding: 6px 0;
-  color: #e6edf3;
+  color: var(--color-text);
   font-size: 15px;
 }
 
 .reward-section ul li:before {
   content: "▸ ";
-  color: #58a6ff;
+  color: var(--color-primary);
   font-weight: bold;
   margin-right: 8px;
 }
@@ -208,37 +208,37 @@
 
 .currency-section {
   padding: 15px;
-  background-color: #1c2128;
+  background-color: #b8a577;
   border-radius: 8px;
-  border: 2px solid #f0b429;
+  border: 2px solid #d4af37;
 }
 
 .currency-section h4 {
   margin: 0 0 10px 0;
-  color: #f0b429;
+  color: #8b7420;
 }
 
 .currency-section p {
   margin: 5px 0;
-  color: #e6edf3;
+  color: var(--color-text);
 }
 
 /* Requirements */
 .requirements {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: #1c2128;
+  background-color: #b8a577;
   border-radius: 8px;
-  border-left: 4px solid #f85149;
+  border-left: 4px solid var(--color-danger);
 }
 
 .requirements p {
   margin: 8px 0;
-  color: #e6edf3;
+  color: var(--color-text);
 }
 
 .requirements strong {
-  color: #ff7b72;
+  color: var(--color-danger);
 }
 
 .requirements ul {
@@ -251,23 +251,23 @@
   padding: 6px 0;
   padding-left: 20px;
   position: relative;
-  color: #e6edf3;
+  color: var(--color-text);
 }
 
 .requirements li:before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #f85149;
+  color: var(--color-danger);
   font-weight: bold;
 }
 
 .weapon-time {
   margin: 10px 0;
   padding: 12px;
-  background-color: rgba(248, 81, 73, 0.1);
+  background-color: rgba(200, 90, 84, 0.2);
   border-radius: 6px;
-  border: 1px solid rgba(248, 81, 73, 0.3);
+  border: 1px solid rgba(200, 90, 84, 0.4);
 }
 
 .weapon-time p {
@@ -275,7 +275,7 @@
 }
 
 .note {
-  color: #8b949e;
+  color: var(--color-text-muted);
   font-style: italic;
   font-size: 14px;
 }
@@ -283,13 +283,13 @@
 /* How to Claim */
 .how-to-claim {
   padding: 15px;
-  background-color: #1c2128;
+  background-color: #b8a577;
   border-radius: 8px;
-  border-left: 4px solid #3fb950;
+  border-left: 4px solid var(--color-success);
 }
 
 .how-to-claim strong {
-  color: #7ee787;
+  color: var(--color-success);
 }
 
 .how-to-claim ul {
@@ -302,14 +302,14 @@
   padding: 6px 0;
   padding-left: 20px;
   position: relative;
-  color: #e6edf3;
+  color: var(--color-text);
 }
 
 .how-to-claim li:before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #3fb950;
+  color: var(--color-success);
   font-weight: bold;
 }
 
@@ -323,7 +323,7 @@
   text-align: center;
   padding: 60px 20px;
   font-size: 18px;
-  color: #8b949e;
+  color: var(--color-text-muted);
 }
 
 /* Responsive Design */
