@@ -11,8 +11,8 @@
   --color-bg: #9a8767;             /* Lighter brown background */
   --color-card: #c8c0a3;           /* Lighter medium brown for cards */
   --color-border: #5a4d3a;         /* Brownish border */
-  --color-text: #3b3831;           /* Light tan/cream text */
-  --color-text-muted: #483608;     /* Muted tan for secondary text */
+  --color-text: #442b06;           /* Light tan/cream text */
+  --color-text-muted: #483708;     /* Muted tan for secondary text */
   --color-success: #7fb069;        /* Muted green (for stats/success) */
   --color-warning: #660c5b;        /* Gold/tan for warnings */
   --color-danger: #c85a54;         /* Muted red for danger */
