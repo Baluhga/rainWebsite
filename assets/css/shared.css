@@ -16,8 +16,17 @@
   --color-success: #7fb069;        /* Muted green (for stats/success) */
   --color-warning: #660c5b;        /* Gold/tan for warnings */
   --color-danger: #c85a54;         /* Muted red for danger */
+  --color-link: #2563eb;           /* Blue for links */
 }
-/* Body */
+
+a {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: #7c3aed; 
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
