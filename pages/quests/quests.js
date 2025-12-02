@@ -145,13 +145,9 @@ function createQuestCard(quest) {
         <!-- Rewards Section -->
         <div class="rewards">
           <h3>Rewards</h3>
-          ${renderRewards(quest.rewards)}
-        </div>
-        
-        <!-- Bounty Coin & Gacha Tickets -->
-        <div class="currency-rewards">
-          ${renderCurrency('Bounty Coin', quest.bounty_coin)}
-          ${renderCurrency('Gacha Ticket', quest.gacha_ticket)}
+          <div class="reward-box">
+            ${renderRewards(quest.rewards)}
+          </div>
         </div>
         
         <!-- Requirements -->
@@ -198,6 +194,8 @@ function renderRewards(rewards) {
       html += `
         <div class="reward-section">
           <h4>${type.charAt(0).toUpperCase() + type.slice(1)}</h4>
+            ${renderCurrency(rewards.currency, type)}
+          <h5>Items:</h5>
           <ul>
             ${rewards[type].map(reward => 
               `<li>${reward.item} x${reward.quantity}</li>`
@@ -212,27 +210,19 @@ function renderRewards(rewards) {
 }
 
 // Render currency (Bounty Coin or Gacha Ticket)
-function renderCurrency(title, currency) {
-  const hasValues = currency.solo || currency.multiplayer || currency.speedrun;
-  
-  if (!hasValues) return '';
-  
-  let html = `
-    <div class="currency-section">
-      <h4>${title}</h4>
-  `;
-  
-  if (currency.solo) {
-    html += `<p>Solo: ${currency.solo}</p>`;
-  }
-  if (currency.multiplayer) {
-    html += `<p>Multiplayer: ${currency.multiplayer}</p>`;
-  }
-  if (currency.speedrun) {
-    html += `<p>Speedrun: ${currency.speedrun}</p>`;
-  }
-  
-  html += `</div>`;
+function renderCurrency(currency, mode) {
+
+  let html = ''
+  if (currency[mode] && currency[mode].length > 0) {
+    html += `
+      <div class="currency-rewards">
+          ${currency[mode].map(reward => 
+            `<p><span>${reward.item}:</span> ${reward.quantity}</p>`
+          ).join('')}
+      </div>
+    `;
+  } 
+
   return html;
 }
 

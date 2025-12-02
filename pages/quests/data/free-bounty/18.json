@@ -8,10 +8,33 @@
     "half_stars": 0
   },
   "rewards": {
+    "currency": {
+      "solo": [
+        {
+          "item": "Bounty Coin",
+          "quantity": "15'000"
+        },
+        {
+          "item": "Gacha Ticket",
+          "quantity": 25
+        }
+      ],
+      "multiplayer": [
+        {
+          "item": "Bounty Coin",
+          "quantity": "8'000"
+        },
+        {
+          "item": "Gacha Ticket",
+          "quantity": 20
+        }
+      ],
+      "speedrun": []
+    },
     "solo": [
       {
         "item": "Divine Power Gems",
-        "quantity": 20000
+        "quantity": "20'000"
       },
       {
         "item": "Shiten Tkt",
@@ -21,7 +44,7 @@
     "multiplayer": [
       {
         "item": "Divine Power Gems",
-        "quantity": 13000
+        "quantity": "13'000"
       },
       {
         "item": "Shiten Tkt",
@@ -33,16 +56,6 @@
       }
     ],
     "speedrun": []
-  },
-  "bounty_coin": {
-    "solo": 15000,
-    "multiplayer": 8000,
-    "speedrun": null
-  },
-  "gacha_ticket": {
-    "solo": 25,
-    "multiplayer": 20,
-    "speedrun": null
   },
   "requirements": {
     "mode": "Solo or Multiplayer",

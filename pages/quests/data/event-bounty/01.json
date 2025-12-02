@@ -8,6 +8,29 @@
     "half_stars": 0
   },
   "rewards": {
+    "currency": {
+      "solo": [
+        {
+          "item": "Bounty Coin",
+          "quantity": "30'000"
+        },
+        {
+          "item": "Gacha Ticket",
+          "quantity": 30
+        }
+      ],
+      "multiplayer": [
+        {
+          "item": "Bounty Coin",
+          "quantity": "25'000"
+        },
+        {
+          "item": "Gacha Ticket",
+          "quantity": 60
+        }
+      ],
+      "speedrun": []
+    },
     "solo": [
       {
         "item": "きんぴか小判Ｇ",
@@ -15,7 +38,7 @@
       },
       {
         "item": "Divine Power Gem",
-        "quantity": 18000
+        "quantity": "18'000"
       },
       {
         "item": "Elixir of Peace",
@@ -53,7 +76,7 @@
       },
       {
         "item": "Divine Power Gem",
-        "quantity": 15000
+        "quantity": "15'000"
       },
       {
         "item": "Elixir of Peace",
@@ -85,16 +108,6 @@
       }
     ],
     "speedrun": []
-  },
-  "bounty_coin": {
-    "solo": 30000,
-    "multiplayer": 25000,
-    "speedrun": 0
-  },
-  "gacha_ticket": {
-    "solo": 30,
-    "multiplayer": 60,
-    "speedrun": 0
   },
   "requirements": {
     "mode": "Solo & Co-op (Duo Only)",
